@@ -1,13 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="device_pin_released" id="WJgnnF}8[c|dQSo5^H6|" x="0" y="0"><field name="NAME">TouchPin.P0</field><statement name="HANDLER"><block type="device_show_leds" id="^l3@e,*_nd^9hJR[{vHA"><field name="LEDS">`
-        . . . . . 
-        . . . . . 
-        . . . . . 
-        . . . . . 
-        . . . . .
-        `</field></block></statement></block><block type="device_button_event" id="qNw{5p%ETL!mC~Wd4$]c" x="396" y="11"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_leds" id="+SPGx]mGF5N|bYpH_a]b"><field name="LEDS">`
-        # . . . . 
-        # . . . . 
-        # . . . . 
-        # . . . . 
-        # . . . .
-        `</field></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="u[}mVo-^}KAl^U=t(EPU">getal</variable><variable id="Vb6aiWqZF6TK6w_VR3~a">als getal kleiner is dan</variable><variable id="+PAVc?lAt,:-UI4zxeSf">stel tafel in</variable><variable id="x7q8L/{j=T0qn9Wi(1:$">toon tafel</variable></variables><block type="pxt-on-start" id="N=N,.CWPhD^i+i2QG56y" x="-91" y="147"><statement name="HANDLER"><block type="variables_set" id="QuP.RzF|hj0sU)f.%+s("><field name="VAR" id="u[}mVo-^}KAl^U=t(EPU">getal</field><value name="VALUE"><shadow type="math_number" id="LJ-:Z][@`eWU+WfgqPxo"><field name="NUM">0</field></shadow></value></block></statement></block><block type="device_forever" id="B?Ge#(DJQq8{AwY,uB:U" x="316" y="165"><statement name="HANDLER"><block type="controls_if" id=")=7!syS^y/ppYl0:mUeC"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="srMW}~ji;%QTEe8#=uj:"><field name="BOOL">TRUE</field></shadow><block type="variables_get" id="5ka{g3}IP`7?w!K3:J5C"><field name="VAR" id="Vb6aiWqZF6TK6w_VR3~a">als getal kleiner is dan</field></block></value><statement name="DO0"><block type="variables_set" id="]3j.[IWU]Fi6^@vAehrs"><field name="VAR" id="Vb6aiWqZF6TK6w_VR3~a">als getal kleiner is dan</field><value name="VALUE"><shadow type="math_number" id="J_!0o{)!dWqUCO)?zOLK"><field name="NUM">12</field></shadow></value></block></statement><statement name="ELSE"><block type="variables_change" id="z=I_+~i6l1IRc`9nY.;b"><field name="VAR" id="Vb6aiWqZF6TK6w_VR3~a">als getal kleiner is dan</field><value name="VALUE"><shadow type="math_number" id="DpG+j=q}F`GOjAhT4M-h"><field name="NUM">3</field></shadow></value></block></statement></block></statement></block></xml>
