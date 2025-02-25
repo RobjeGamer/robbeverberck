@@ -1,9 +1,12 @@
-let als_getal_kleiner_is_dan = 0
 let getal = 0
+let als_getal_kleiner_is_dan = 12
 basic.forever(function () {
-    if (als_getal_kleiner_is_dan) {
-        als_getal_kleiner_is_dan = 12
-    } else {
-        als_getal_kleiner_is_dan += 3
+    while (true) {
+        basic.showNumber(getal)
+        if (als_getal_kleiner_is_dan) {
+            getal += 3
+        } else {
+            basic.showNumber(getal)
+        }
     }
 })
