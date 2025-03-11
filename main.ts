@@ -1,12 +1,8 @@
-let getal = 0
-let als_getal_kleiner_is_dan = 12
-basic.forever(function () {
-    while (true) {
-        basic.showNumber(getal)
-        if (als_getal_kleiner_is_dan) {
-            getal += 3
-        } else {
-            basic.showNumber(getal)
-        }
-    }
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(getal + 1)
 })
+input.onButtonPressed(Button.B, function () {
+    basic.showNumber(0 - 1)
+})
+let getal = 0
+getal = 0
