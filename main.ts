@@ -1,32 +1,9 @@
+let kr = 0
 basic.forever(function () {
-    if (input.compassHeading() > 45 && input.compassHeading() < 135) {
-        basic.showLeds(`
-            . . # . .
-            . # . . .
-            # # # # #
-            . # . . .
-            . . # . .
-            `)
-    }
-    if (input.compassHeading() > 315 && input.compassHeading() < 45) {
-        basic.showLeds(`
-            . . # . .
-            . # # # .
-            # . # . #
-            . . # . .
-            . . # . .
-            `)
-    }
-    if (input.compassHeading() > 225 && input.compassHeading() < 315) {
-        basic.showLeds(`
-            . . # . .
-            . . . # .
-            # # # # #
-            . . . # .
-            . . # . .
-            `)
-    }
-    if (input.compassHeading() < 135 && input.compassHeading() < 225) {
+    kr = input.compassHeading()
+})
+basic.forever(function () {
+    if (kr > 135 && kr < 225) {
         basic.showLeds(`
             . . # . .
             . . # . .
@@ -35,4 +12,34 @@ basic.forever(function () {
             . . # . .
             `)
     }
+    if (kr > 45 && kr < 135) {
+        basic.showLeds(`
+            . . # . .
+            . # . . .
+            # # # # #
+            . # . . .
+            . . # . .
+            `)
+    }
+    if (kr > 225 && kr < 315) {
+        basic.showLeds(`
+            . . # . .
+            . . . # .
+            # # # # #
+            . . . # .
+            . . # . .
+            `)
+    }
+    if (kr > 315 && (kr < "0" && kr > 45)) {
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            # . # . #
+            . . # . .
+            . . # . .
+            `)
+    }
+})
+basic.forever(function () {
+	
 })
